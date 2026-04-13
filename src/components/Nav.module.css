@@ -10,13 +10,15 @@
   background: linear-gradient(to bottom, var(--bg), transparent);
 }
 
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-primary);
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .links {

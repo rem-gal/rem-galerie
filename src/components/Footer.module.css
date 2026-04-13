@@ -8,12 +8,9 @@
 }
 
 .logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  font-weight: 400;
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .right {
