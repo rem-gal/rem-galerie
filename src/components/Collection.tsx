@@ -4,7 +4,7 @@ import styles from './Collection.module.css'
 
 export default function Collection() {
   return (
-    <section className={styles.collection}>
+    <section id="collection" className={styles.collection}>
       <div className={styles.header}>
         <h2>Our Collection</h2>
       </div>

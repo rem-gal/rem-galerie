@@ -32,10 +32,10 @@ function InstagramIcon() {
 
 export default function Contact() {
   return (
-    <section className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <div className={styles.inner}>
         <h2>Get in Touch</h2>
-        <p className={styles.sub}>Commissions, wholesale, or just to say hello.</p>
+        <p className={styles.sub}>Commissions &amp; wholesale enquiries.</p>
         <div className={styles.links}>
           <a
             href="https://wa.me/966500000000"
@@ -49,14 +49,14 @@ export default function Contact() {
           </a>
           <div className={styles.linkDivider} aria-hidden="true" />
           <a
-            href="https://instagram.com/rem.galerie"
+            href="https://instagram.com/remgalerie"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
             aria-label="Follow us on Instagram"
           >
             <span className={styles.icon}><InstagramIcon /></span>
-            <span className={styles.label}>@rem.galerie</span>
+            <span className={styles.label}>@remgalerie</span>
           </a>
         </div>
       </div>
