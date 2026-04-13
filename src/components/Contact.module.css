@@ -1,0 +1,123 @@
+.contact {
+  background: var(--charcoal);
+  padding: 100px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+.inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+
+.sub {
+  font-size: 0.8rem;
+  color: var(--sand);
+  margin-top: 12px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sand);
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(242, 239, 233, 0.15);
+  background: rgba(242, 239, 233, 0.05);
+  color: var(--cream);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 300;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(242, 239, 233, 0.25);
+  font-weight: 300;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(242, 239, 233, 0.4);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.send {
+  margin-top: 8px;
+  align-self: flex-start;
+  padding: 14px 48px;
+  border: 1px solid rgba(242, 239, 233, 0.25);
+  background: transparent;
+  color: var(--cream);
+  font-family: 'Karla', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.send:hover:not(:disabled) {
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.send:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 24px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,109 @@
+.collection {
+  padding: 100px 48px 120px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gridItem {
+  aspect-ratio: 3 / 4;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface);
+}
+
+.gridItemImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gridItem:hover .gridItemImage {
+  transform: scale(1.04);
+}
+
+.ceramicSvg {
+  width: 50%;
+  height: auto;
+  opacity: 0.2;
+  transition: opacity 0.6s;
+}
+
+.gridItem:hover .ceramicSvg {
+  opacity: 0.35;
+}
+
+.gridItemInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.4s ease;
+}
+
+.gridItem:hover .gridItemInfo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gridItemInfo h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.price {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.gridItemInfo span:not(.price) {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .collection {
+    padding: 60px 24px 80px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+}

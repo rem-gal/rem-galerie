@@ -1,0 +1,22 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+  gap: 24px;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: var(--sand);
+  max-width: 200px;
+}
+
+.diamond {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
